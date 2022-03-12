@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 81820321}
   - component: {fileID: 81820320}
   - component: {fileID: 81820322}
-  - component: {fileID: 81820323}
   - component: {fileID: 81820324}
+  - component: {fileID: 81820325}
   m_Layer: 0
   m_Name: SecondLevel
   m_TagString: Untagged
@@ -234,20 +234,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &81820323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81820319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d7ca397786888140abd7114dac7147c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
 --- !u!114 &81820324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +251,22 @@ MonoBehaviour:
   visible: 0
   m_AssetId: 
   hasSpawned: 0
+--- !u!114 &81820325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81820319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b595163cd36344398208a8d2534cc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  networkManager: {fileID: 1966907433}
+  _sceneName: SecondLevel
 --- !u!1 &393024128
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,8 +278,8 @@ GameObject:
   - component: {fileID: 393024130}
   - component: {fileID: 393024129}
   - component: {fileID: 393024131}
-  - component: {fileID: 393024132}
   - component: {fileID: 393024133}
+  - component: {fileID: 393024134}
   m_Layer: 0
   m_Name: FirstLevel
   m_TagString: Untagged
@@ -376,21 +378,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &393024132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393024128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b595163cd36344398208a8d2534cc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  networkManager: {fileID: 1966907433}
 --- !u!114 &393024133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,6 +395,22 @@ MonoBehaviour:
   visible: 0
   m_AssetId: 
   hasSpawned: 0
+--- !u!114 &393024134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393024128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b595163cd36344398208a8d2534cc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  networkManager: {fileID: 1966907433}
+  _sceneName: FirstLevel
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

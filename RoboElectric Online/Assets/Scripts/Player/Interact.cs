@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
-public class Iteract : NetworkBehaviour
+public class Interact : NetworkBehaviour
 {
-    Interactable i;
+    private Interactable i;
     private bool isCollision = false;
-    Collider2D collider;
+    private Collider2D collider;
 
     private void Update()
     {
-        Teleport();        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Interaction();
+        }
     }
 
     private void Awake()
@@ -32,7 +35,7 @@ public class Iteract : NetworkBehaviour
         this.collider = null;
     }
 
-    private void Teleport()
+    private void Interaction()
     {
         if (collider != null && isCollision)
         {
@@ -43,6 +46,7 @@ public class Iteract : NetworkBehaviour
             else
             {
                 i.Interaction(this.gameObject.GetComponent<NetworkIdentity>());
+                print("Inter");
             }
         }
     }
