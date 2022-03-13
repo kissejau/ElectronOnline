@@ -7,7 +7,8 @@ public class Lecture : MonoBehaviour
 {
     [SerializeField]
     protected string lectureName;
-    
+
+    public string[] SheetLabels;
     public string[] Text;
     public int SheetCount => Text.Length;
     public int CurrentSheet;
@@ -34,5 +35,9 @@ public class Lecture : MonoBehaviour
     public string GetCurrentSheetText()
     {
         return Text[CurrentSheet];
+    }
+    public string GetCurrentSheetLabel()
+    {
+        return SheetLabels[CurrentSheet];
     }
 }

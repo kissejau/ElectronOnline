@@ -25,11 +25,14 @@ public class PlayerMovement : NetworkBehaviour
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            Database.WriteToFile(10.ToString());
+        }
     }
     
     private void FixedUpdate()

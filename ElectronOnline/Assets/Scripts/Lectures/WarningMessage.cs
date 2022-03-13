@@ -5,7 +5,7 @@ using UnityEngine;
 public class WarningMessage : MonoBehaviour
 {
     [SerializeField]
-    private ShowLectures _shower;
+    private LectureShower _shower;
     
     public void Confirm()
     {
